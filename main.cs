@@ -72,10 +72,10 @@ public class Boleto{
 class Program{
     static void Main(string[] args){
         
-            Tarjeta tarjeta = new Tarjeta(3000m);
+            Tarjeta tarjeta = new Tarjeta(3000);
             Console.WriteLine($"Saldo inicial en la tarjeta: {tarjeta.Saldo}");
 
-            Colectivo colectivo = new Colectivo(940m);
+            Colectivo colectivo = new Colectivo(940);
 
             Boleto boleto = colectivo.PagarCon(tarjeta);
 
