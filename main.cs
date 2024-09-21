@@ -81,7 +81,7 @@ class Program{
 
             Console.WriteLine(boleto);
 
-            tarjeta.CargarSaldo(5000m);
+            tarjeta.CargarSaldo(5000);
             Console.WriteLine($"Saldo después de la carga: {tarjeta.Saldo}");
 
         }
