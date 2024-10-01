@@ -69,3 +69,14 @@ public class Tarjeta
         }
     }
 }
+public class MedioBoleto : Tarjeta
+{
+    public MedioBoleto(decimal saldoInicial) : base(saldoInicial)
+    {
+    }
+    public override void DescontarSaldo(decimal monto)
+    {
+        decimal montoConDescuento = monto / 2;
+        base.DescontarSaldo(montoConDescuento);
+    }
+}
