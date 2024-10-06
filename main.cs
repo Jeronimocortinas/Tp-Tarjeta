@@ -1,13 +1,11 @@
 using System;
 
-class Program
-{
-    static void Main(string[] args)
-    {
+class Program{
+    static void Main(string[] args){
         Tarjeta tarjeta = null;
         Colectivo colectivo = new Colectivo(940m); 
-        while (true)
-        {
+
+        while (true){
             Console.WriteLine("\n--- Sistema de Tarjetas ---");
             Console.WriteLine("1. Crear tarjeta normal");
             Console.WriteLine("2. Crear tarjeta de medio boleto");
@@ -19,10 +17,9 @@ class Program
             Console.Write("Seleccione una opción: ");
 
             string opcion = Console.ReadLine();
-            try
-            {
-                switch (opcion)
-                {
+            Console.Clear();
+            try{
+                switch (opcion){
                     case "1":
                         Console.Write("Ingrese saldo inicial para la tarjeta normal: ");
                         decimal saldoNormal = decimal.Parse(Console.ReadLine());
@@ -36,36 +33,41 @@ class Program
                         Console.WriteLine("Tarjeta de medio boleto creada.");
                         break;
                     case "3":
-                        tarjeta = new FranquiciaCompleta(0m); 
+                        Console.Write("Ingrese saldo inicial para la tarjeta de medio boleto: ");
+                         decimal saldoCompleto = decimal.Parse(Console.ReadLine());
+                        tarjeta = new FranquiciaCompleta(saldoCompleto); 
                         Console.WriteLine("Tarjeta de franquicia completa creada.");
                         break;
                     case "4":
-                        if (tarjeta == null)
-                        {
+                        if (tarjeta == null){
                             Console.WriteLine("Primero debe crear una tarjeta.");
                             break;
                         }
-                        Console.Write("Ingrese monto a cargar: ");
+                        Console.Write("Las cargas permitias son de: 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000\nIngrese monto a cargar:");
                         decimal montoCarga = decimal.Parse(Console.ReadLine());
                         tarjeta.CargarSaldo(montoCarga);
                         Console.WriteLine($"Saldo después de la carga: {tarjeta.Saldo}");
                         break;
                     case "5":
-                        if (tarjeta == null)
-                        {
+                        if (tarjeta == null){
                             Console.WriteLine("Primero debe crear una tarjeta.");
                             break;
                         }
+
+                        if (tarjeta is MedioBoleto medioBoleto){
+                            if (medioBoleto.TieneViajesHoyExcedidos()){
+                                Console.WriteLine("No se pueden realizar más de 4 viajes por día con una tarjeta de medio boleto.Se cobrara tarifa plena");
+                            }
+                        }
+                        
                         Boleto boleto = colectivo.PagarCon(tarjeta);
                         Console.WriteLine(boleto);
                         break;
                     case "6":
-                        if (tarjeta == null)
-                        {
+                        if (tarjeta == null){
                             Console.WriteLine("Primero debe crear una tarjeta.");
                         }
-                        else
-                        {
+                        else{
                             Console.WriteLine($"Saldo actual: {tarjeta.Saldo}");
                         }
                         break;
@@ -79,12 +81,10 @@ class Program
                         break;
                 }
             }
-            catch (InvalidOperationException ex)
-            {
+            catch (InvalidOperationException ex){
                 Console.WriteLine($"Error: {ex.Message}");
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex){
                 Console.WriteLine($"Ocurrió un error inesperado: {ex.Message}");
             }
         }
