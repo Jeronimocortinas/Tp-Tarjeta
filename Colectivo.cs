@@ -14,10 +14,11 @@ public class Colectivo
             tarjeta.DescontarSaldo(Tarifa);
             return new Boleto(this, tarjeta, Tarifa);
         }
-        else
-        {
+        else{
             throw new InvalidOperationException("Saldo insuficiente en la tarjeta.");
         }
-    }
+ 
+   }
+
 }
 
