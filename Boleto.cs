@@ -1,13 +1,14 @@
 using System;
+
 public class Boleto{
     public Colectivo Colectivo { get; private set; }
     public Tarjeta Tarjeta { get; private set; }
     public decimal MontoPagado { get; private set; }
     public DateTime FechaHora { get; private set; }
-    public string TipoTarjeta => Tarjeta.GetType().Name; 
-    public string LineaColectivo => "Línea 1"; 
-    public string IdTarjeta => Tarjeta.GetHashCode().ToString(); 
-    public decimal SaldoRestante => Tarjeta.Saldo; 
+    public string TipoTarjeta => Tarjeta.GetType().Name;
+    public string LineaColectivo => Colectivo.EsInterurbano ? "Línea Interurbana" : "Línea Urbana";
+    public string IdTarjeta => Tarjeta.GetHashCode().ToString();
+    public decimal SaldoRestante => Tarjeta.Saldo;
 
     public Boleto(Colectivo colectivo, Tarjeta tarjeta, decimal montoPagado){
         Colectivo = colectivo;
