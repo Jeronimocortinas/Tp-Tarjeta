@@ -1,0 +1,14 @@
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\bin\Debug\netcoreapp7.0\main.exe
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\bin\Debug\netcoreapp7.0\main.deps.json
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\bin\Debug\netcoreapp7.0\main.runtimeconfig.json
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\bin\Debug\netcoreapp7.0\main.dll
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\bin\Debug\netcoreapp7.0\main.pdb
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\main.AssemblyInfoInputs.cache
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\main.AssemblyInfo.cs
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\main.csproj.CoreCompileInputs.cache
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\main.dll
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\refint\main.dll
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\main.pdb
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\main.genruntimeconfig.cache
+C:\Users\bauti\OneDrive\Escritorio\trabajoAAT\obj\Debug\netcoreapp7.0\ref\main.dll

@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bauti\\OneDrive\\Escritorio\\caprta suicidio maurigol la conhca de tu hermana\\trabajoAAT\\main.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bauti\\OneDrive\\Escritorio\\caprta suicidio maurigol la conhca de tu hermana\\trabajoAAT\\main.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bauti\\OneDrive\\Escritorio\\caprta suicidio maurigol la conhca de tu hermana\\trabajoAAT\\main.csproj",
+        "projectName": "main",
+        "projectPath": "C:\\Users\\bauti\\OneDrive\\Escritorio\\caprta suicidio maurigol la conhca de tu hermana\\trabajoAAT\\main.csproj",
+        "packagesPath": "C:\\Users\\bauti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bauti\\OneDrive\\Escritorio\\caprta suicidio maurigol la conhca de tu hermana\\trabajoAAT\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bauti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "netcoreapp7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "netcoreapp7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

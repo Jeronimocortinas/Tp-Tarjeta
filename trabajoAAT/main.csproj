@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp7.0</TargetFramework>
+    <StartupObject>Program</StartupObject>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Colectivo.cs" />
+    <Compile Include="Tarjeta.cs" />
+    <Compile Include="Boleto.cs" />
+    <Compile Include="main.cs" />
+    <Compile Include="tiempo.cs" />
+    <Compile Include="tiempoFalso.cs" />
+  </ItemGroup>
+
+</Project>
